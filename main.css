@@ -1,0 +1,23 @@
+*{
+  text-decoration: none;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+
+body{
+  overflow-x: hidden
+}
+
+nav {
+ background-image: url(/images/top_background.png);
+ height: 915px;
+}
+
+ul{
+  position: fixed;
+  padding-top: 30px;
+}
+

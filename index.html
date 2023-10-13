@@ -7,127 +7,134 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />  
   <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
-  <div>
-    <header>
-      <div class="logo_back d-flex justify-content-between">
-        <div class="logo">
-          <a href=""><img src="/images/LOGO.png" alt="로고"></a>
-        </div>
-        <div class="menu_box">
-          <a class="menu-trigger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
-        </div>
+  <header class="container">
+    <div class="logo_back d-flex justify-content-between">
+      <div class="logo">
+        <a href=""><img src="/images/LOGO_white.png" alt="로고"></a>
       </div>
-      <nav class="drop_menu">
-        <ul>
-          <li><a href="">포트폴리오</a></li>
-          <li><a href="">자기소개서</a></li>
-        </ul>
-      </nav>  
-    </header>
-    <main>
-      <div class="main_top">
-        <div class="main_title d-flex">
-          <span>PARK</span>
-          <span class="path"><video src="/video/production_id_4872898 (1080p).mp4" muted autoplay loop></video></span>
-          <span>HYEIN</span>
-        </div>
-        <img src="/images/top_background.png" alt="">
+      <div class="menu_box">
+        <a class="menu-trigger" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
-      <div class="container">
-        <div class="main_portfolio pd_1">
-          <h5>포트폴리오</h5>
-          <div class="pf_tab_icon">
-            <object data="/images/web.svg" width="35"></object>
-            <object data="/images/design.svg" width="30"></object>
+    </div>
+    <nav class="drop_menu">
+      <ul>
+        <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">ABOUT ME</a></li>
+        <li><a href="">GITHUB</a></li>
+      </ul>
+    </nav>  
+    <div class="main_top">
+      <img src="/images/me.svg" alt="">
+    </div>
+    <!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
+
+<a href="#" class="cta">
+  <span>Click me</span>
+  <svg width="13px" height="10px" viewBox="0 0 13 10">
+    <path d="M1,5 L11,5"></path>
+    <polyline points="8 1 12 5 8 9"></polyline>
+  </svg>
+</a>
+  </header>
+  <div class="white_back">
+
+    <div class="container">
+
+      <main>
+
+  
+          <div class="main_portfolio pd_1">
+            <h5>포트폴리오</h5>
+            <div class="pf_tab_icon">
+              <object data="/images/web.svg" width="35"></object>
+              <object data="/images/design.svg" width="30"></object>
+            </div>
+            <div class="pf_web d-flex">
+                <div class="box">
+                  <img src="" alt="">
+                  <div>
+                    <p>1st project</p>
+                    <h5>라이엇게임즈<br>
+                      메인페이지 리뉴얼</h5>
+                    <div class="d-flex justify-content-center gap-4">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-link"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="" alt="">
+                  <div>
+                    <p>2nd project</p>
+                    <h5>LG생활건강<br>
+                      반응형 홈페이지</h5>
+                    <div class="d-flex justify-content-center gap-4">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-link"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="" alt="">
+                  <div>
+                    <p>3rd project</p>
+                    <h5>LMS사이트<br>
+                      관리자페이지</h5>
+                    <div class="d-flex justify-content-center gap-4">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-link"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="box">
+                  <img src="" alt="">
+                  <div>
+                    <p>4th project</p>
+                    <h5>LMS사이트<br>
+                      사용자페이지</h5>
+                    <div class="d-flex justify-content-center gap-4">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-link"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
-          <div class="pf_web">
-            <div class="box">
-              <img src="" alt="">
-              <div>
-                <p>1st project</p>
-                <h5>라이엇게임즈<br>
-                  메인페이지 리뉴얼</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
+          <div class="skill">
+            <h2>웹 개발을 위한</h2>
+            <h2>나의 기술경험</h2>
+            <p>html부터 프론트엔드의 꽃인 javascript, 백엔드 언어인 php까지<br>
+              6개월 간 4개의 프로젝트를 위해 모두 다뤄보았습니다.</p>
+            <div>
+              <img src="/images/html.png" alt="">
+              <img src="/images/css.png" alt="">
+              <img src="/images/js.png" alt="">
+              <img src="/images/react.png" alt="">
+              <img src="/images/php.png" alt="">
+              <img src="/images/mysql.png" alt="">
+              <img src="/images/figma.png" alt="">
+              <img src="/images/psd.png" alt="">
+              <img src="/images/illust.png" alt="">
             </div>
-            <div class="box">
-              <img src="" alt="">
-              <div>
-                <p>2nd project</p>
-                <h5>LG생활건강<br>
-                  반응형 홈페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="" alt="">
-              <div>
-                <p>3rd project</p>
-                <h5>LMS사이트<br>
-                  관리자페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="" alt="">
-              <div>
-                <p>4th project</p>
-                <h5>LMS사이트<br>
-                  사용자페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
+            
   
           </div>
-        </div>
-        <div class="skill">
-          <h2>웹 개발을 위한</h2>
-          <h2>나의 기술경험</h2>
-          <p>html부터 프론트엔드의 꽃인 javascript, 백엔드 언어인 php까지<br>
-            6개월 간 4개의 프로젝트를 위해 모두 다뤄보았습니다.</p>
-          <div>
-            <img src="/images/html.png" alt="">
-            <img src="/images/css.png" alt="">
-            <img src="/images/js.png" alt="">
-            <img src="/images/react.png" alt="">
-            <img src="/images/php.png" alt="">
-            <img src="/images/mysql.png" alt="">
-            <img src="/images/figma.png" alt="">
-            <img src="/images/psd.png" alt="">
-            <img src="/images/illust.png" alt="">
-          </div>
-          
-
-        </div>
-      </div>
-    </main>
+  
+      </main>
+    </div>
     <footer></footer>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="/main.js"></script>
 </body>
 

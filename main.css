@@ -225,6 +225,14 @@ object svg {
   height: 50px;
 }
 
+.circle span{
+  display: none;
+  font-size: 14px;
+}
+.circle span.active{
+  display: block;
+}
+
 .circle img:hover {
   filter: invert(94%) sepia(95%) saturate(3979%) hue-rotate(310deg) brightness(99%) contrast(104%);
 }

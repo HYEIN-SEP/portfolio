@@ -21,3 +21,5 @@ $('.pf_web').slick({
   autoplaySpeed: 2000,
   infinite: true
 });
+
+

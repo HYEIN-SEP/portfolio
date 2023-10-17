@@ -10,8 +10,7 @@ burger.each(function (index) {
   })
 })
 
-
-$('.pf_web').slick({
+$('.pfContent').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 3,
@@ -22,4 +21,12 @@ $('.pf_web').slick({
   infinite: true
 });
 
+$('.pf_icon').click(function () {
+  $(this).addClass('active');
+  $(this).siblings().removeClass('active');
+
+  let idx = $(this).index() + 1
+  $('#pf_cont_' + idx).addClass('active');
+  $('#pf_cont_' + idx).siblings().removeClass('active');
+})
 

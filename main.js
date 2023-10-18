@@ -6,7 +6,7 @@ burger.each(function (index) {
   $this.on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('active-' + (index + 1));
-    $('nav').toggleClass('active');
+    $('.menu').toggleClass('active');
   })
 })
 
@@ -30,3 +30,7 @@ $('.pf_icon').click(function () {
   $('#pf_cont_' + idx).siblings().removeClass('active');
 })
 
+
+$('.next').click(function(){
+  
+})

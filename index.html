@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HOME-Hi portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
     integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,233 +17,230 @@
 
 <body>
   <header class="container">
-    <div class="logo_back d-flex justify-content-between">
-      <div class="logo">
-        <a href=""><img src="/images/LOGO_white.png" alt="로고"></a>
-      </div>
-      <div class="menu_box">
-        <a class="menu-trigger" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-      <nav class="drop_menu">
-        <ul>
-          <li><a href="">PORTFOLIO</a></li>
-          <li><a href="">ABOUT ME</a></li>
-          <li><a href="https://github.com/HYEIN-SEP" target="_blank">GITHUB</a></li>
-        </ul>
-      </nav>
+    <div class="logo">
+      <a href=""><img src="/images/LOGO_white.png" alt="로고"></a>
     </div>
-    <div class="msg_wrap d-flex align-items-center justify-content-center gap-5">
+    <div class="menu">
+      <ul>
+        <li><a href="/portfolio.html">PORTFOLIO</a></li>
+        <li><a href="">ABOUT ME</a></li>
+        <li><a href="https://github.com/HYEIN-SEP" target="_blank">GITHUB</a></li>
+      </ul>
+    </div>
+    <div class="menu_box">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
+  </header>
+  <main>
+    <div class="main_top container">
       <div class="msg_box">
-        <div class="msg_1">
-          <p>안녕하세요. 박혜인입니다.</p>
-          <span>NEXT <i class="fa-solid fa-angles-right"></i></span>
-        </div>
+        <ul class="msg d-flex">
+          <li>안녕하세요. 박혜인입니다1.</li>
+          <li>안녕하세요. 박혜인입니다2.</li>
+          <li>안녕하세요. 박혜인입니다3.</li>
+          <li>안녕하세요. 박혜인입니다4.</li>
+        </ul>
+        <span class="next">NEXT <i class="fa-solid fa-angles-right"></i></span>
       </div>
-      <div class="main_top">
+      <div class="top_img">
         <img src="/images/me.svg" alt="">
       </div>
     </div>
-    <!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
-
-  </header>
-  <div class="white_back">
-
-    <div class="">
-      <main>
-        <div class="main_portfolio pd_1 container">
-          <div class="pf_tab_icon">
-            <h5 class="mb-3">포트폴리오</h5>
-            <p class="pf_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt error
-              consequuntur aspernatur nesciunt, earum magnam tempore ratione vero laborum maxime odio minus dolore sit
-              nam, dicta optio excepturi illo!</p>
-            <div class="pfIcon d-flex justify-content-center gap-5 mt-5">
-              <div class="pf_icon active" id="pf_icon_1">
-                <object data="/images/web.svg" width="35"></object>
-                <p>web</p>
-              </div>
-              <div class="pf_icon" id="pf_icon_2">
-                <object data="/images/design.svg" width="30"></object>
-                <p>design</p>
+    <div class="white_back">
+      <div class="main_portfolio pd_1 container">
+        <div class="pf_tab_icon">
+          <h5 class="mb-3">포트폴리오</h5>
+          <p class="pf_des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias deserunt error
+            consequuntur aspernatur nesciunt, earum magnam tempore ratione vero laborum maxime odio minus dolore sit
+            nam, dicta optio excepturi illo!</p>
+          <div class="pfIcon d-flex justify-content-center gap-5 mt-5">
+            <div class="pf_icon active" id="pf_icon_1">
+              <object data="/images/web.svg" width="35"></object>
+              <p>web</p>
+            </div>
+            <div class="pf_icon" id="pf_icon_2">
+              <object data="/images/design.svg" width="30"></object>
+              <p>design</p>
+            </div>
+          </div>
+        </div>
+        <div class="pfContent active mt-5" id="pf_cont_1">
+          <div class="box">
+            <img src="/images/riot.png" alt="">
+            <hr>
+            <div>
+              <p>1st project</p>
+              <h5>라이엇게임즈<br>
+                메인페이지 리뉴얼</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
               </div>
             </div>
           </div>
-          <div class="pfContent active mt-5" id="pf_cont_1">
-            <div class="box">
-              <img src="/images/riot.png" alt="">
-              <hr>
-              <div>
-                <p>1st project</p>
-                <h5>라이엇게임즈<br>
-                  메인페이지 리뉴얼</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="/images/lghnh.png" alt="">
-              <hr>
-              <div>
-                <p>2nd project</p>
-                <h5>LG생활건강<br>
-                  반응형 홈페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="/images/pudding3.png" alt="">
-              <hr>
-              <div>
-                <p>3rd project</p>
-                <h5>LMS사이트<br>
-                  관리자페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="/images/pudding4.png" alt="">
-              <hr>
-              <div>
-                <p>4th project</p>
-                <h5>LMS사이트<br>
-                  사용자페이지</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
+          <div class="box">
+            <img src="/images/lghnh.png" alt="">
+            <hr>
+            <div>
+              <p>2nd project</p>
+              <h5>LG생활건강<br>
+                반응형 홈페이지</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
               </div>
             </div>
           </div>
-          <div class="pfContent mt-5" id="pf_cont_2">
-            <div class="box">
-              <img src="/images/riot.png" alt="">
-              <hr>
-              <div>
-                <p>1st project</p>
-                <h5>디자인1</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
+          <div class="box">
+            <img src="/images/pudding3.png" alt="">
+            <hr>
+            <div>
+              <p>3rd project</p>
+              <h5>LMS사이트<br>
+                관리자페이지</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
               </div>
             </div>
-            <div class="box">
-              <img src="/images/lghnh.png" alt="">
-              <hr>
-              <div>
-                <p>2nd project</p>
-                <h5>디자인2</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="/images/pudding3.png" alt="">
-              <hr>
-              <div>
-                <p>3rd project</p>
-                <h5>디자인3</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <img src="/images/pudding4.png" alt="">
-              <hr>
-              <div>
-                <p>4th project</p>
-                <h5>디자인4</h5>
-                <div class="d-flex justify-content-center gap-4">
-                  <i class="fa-regular fa-heart"></i>
-                  <i class="fa-solid fa-link"></i>
-                </div>
+          </div>
+          <div class="box">
+            <img src="/images/pudding4.png" alt="">
+            <hr>
+            <div>
+              <p>4th project</p>
+              <h5>LMS사이트<br>
+                사용자페이지</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
               </div>
             </div>
           </div>
         </div>
-        <div class="skill_wrap">
-          <div class="skills container">
-            <h2 class="skillTt_1">웹 개발을 위한</h2>
-            <h2 class="skillTt_2">나의 기술경험</h2>
-            <div class="skill_des">
-              <p>html부터 프론트엔드의 꽃인 javascript, 백엔드 언어인 php까지 6개월 간 4개의 프로젝트를 위해 모두 다뤄보았습니다. 4개의 프로젝트를 위해 모두 다뤄보았습니다.</p>
-            </div>
-            <div class="skillIcon">
-              <div>
-                <img src="/images/html5.svg" alt="">
-                <span class="diq">html</span>
-              </div>
-              <div>
-                <img src="/images/css3.svg" alt="">
-                <span>css</span>
-              </div>
-              <div>
-                <img src="/images/javascript.svg" alt="">
-                <span>javascript</span>
-              </div>
-              <div>
-                <img src="/images/jquery.svg" alt="">
-                <span>jquery</span>
-              </div>
-              <div>
-                <img src="/images/react.svg" alt="">
-                <span>react</span>
-              </div>
-              <div>
-                <img src="/images/php.svg" alt="">
-                <span>php</span>
-              </div>
-              <div>
-                <img src="/images/mysql.svg" alt="">
-                <span>mysql</span>
-              </div>
-              <div>
-                <img src="/images/figma.svg" alt="">
-                <span>figma</span>
-              </div>
-              <div>
-                <img src="/images/adobephotoshop.svg" alt="">
-                <span>photoshop</span>
-              </div>
-              <div>
-                <img src="/images/adobeillustrator.svg" alt="">
-                <span>illustrator</span>
+        <div class="pfContent mt-5" id="pf_cont_2">
+          <div class="box">
+            <img src="/images/riot.png" alt="">
+            <hr>
+            <div>
+              <p>1st project</p>
+              <h5>디자인1</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
               </div>
             </div>
           </div>
-        </div>
-      </main>
-    </div>
-    <footer>
-      <div class="container f_cont">
-        <h2>안녕하세요. 박혜인입니다.</h2>
-        <div class="f_des">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat eum delectus nesciunt
-            debitis ipsum laboriosam iusto architecto ipsam quae libero veritatis, ab rem omnis necessitatibus aliquid
-            reiciendis! Ullam, enim.</p>
-        </div>
-        <div class="footerBtn">
-          <a href="">contact me</a>
-          <a href="">자기소개서 다운로드</a>
+          <div class="box">
+            <img src="/images/lghnh.png" alt="">
+            <hr>
+            <div>
+              <p>2nd project</p>
+              <h5>디자인2</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <img src="/images/pudding3.png" alt="">
+            <hr>
+            <div>
+              <p>3rd project</p>
+              <h5>디자인3</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <img src="/images/pudding4.png" alt="">
+            <hr>
+            <div>
+              <p>4th project</p>
+              <h5>디자인4</h5>
+              <div class="d-flex justify-content-center gap-4">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
-  </div>
+      <div class="skill_wrap">
+        <div class="skills container">
+          <h2 class="skillTt_1">웹 개발을 위한</h2>
+          <h2 class="skillTt_2">나의 기술경험</h2>
+          <div class="skill_des">
+            <p>html부터 프론트엔드의 꽃인 javascript, 백엔드 언어인 php까지 6개월 간 4개의 프로젝트를 위해 모두 다뤄보았습니다. 4개의 프로젝트를 위해 모두 다뤄보았습니다.</p>
+          </div>
+          <div class="skillIcon">
+            <div>
+              <img src="/images/html5.svg" alt="">
+              <span class="diq">html</span>
+            </div>
+            <div>
+              <img src="/images/css3.svg" alt="">
+              <span>css</span>
+            </div>
+            <div>
+              <img src="/images/javascript.svg" alt="">
+              <span>javascript</span>
+            </div>
+            <div>
+              <img src="/images/jquery.svg" alt="">
+              <span>jquery</span>
+            </div>
+            <div>
+              <img src="/images/react.svg" alt="">
+              <span>react</span>
+            </div>
+            <div>
+              <img src="/images/php.svg" alt="">
+              <span>php</span>
+            </div>
+            <div>
+              <img src="/images/mysql.svg" alt="">
+              <span>mysql</span>
+            </div>
+            <div>
+              <img src="/images/figma.svg" alt="">
+              <span>figma</span>
+            </div>
+            <div>
+              <img src="/images/adobephotoshop.svg" alt="">
+              <span>photoshop</span>
+            </div>
+            <div>
+              <img src="/images/adobeillustrator.svg" alt="">
+              <span>illustrator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container f_cont">
+      <h2>안녕하세요. 박혜인입니다.</h2>
+      <div class="f_des">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat eum delectus nesciunt
+          debitis ipsum laboriosam iusto architecto ipsam quae libero veritatis, ab rem omnis necessitatibus aliquid
+          reiciendis! Ullam, enim.</p>
+      </div>
+      <div class="footerBtn">
+        <a href=""><span>contact me</span></a>
+        <a href=""><span>자기소개서 다운로드</span></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

@@ -40,13 +40,13 @@ main {
 /* header */
 
 header {
-  position: relative;
   width: 100%;
   height: 55px;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo img {
@@ -59,9 +59,7 @@ header {
 }
 
 .menu {
-  position: absolute;
-  top: 0;
-  right: -100%;
+  transform: translateX(100%);
   width: 100%;
   height: 55px;
   transition: 1s;
@@ -73,7 +71,6 @@ header {
   gap: 10%;
   justify-content: center;
   align-items: center;
-  padding-left: 87.7px;
 }
 
 .menu ul li a {
@@ -81,7 +78,7 @@ header {
 }
 
 .menu.active {
-  right: 0;
+  transform: translateX(0);
 }
 
 
@@ -171,7 +168,7 @@ header {
   border-left: 10px solid #fff;
 }
 
-.msg{
+.msg {
   /* position: absolute; */
   left: 0;
   top: 0;
@@ -181,16 +178,16 @@ header {
   padding-left: 0;
   overflow: hidden;
   flex-wrap: wrap;
-  
+
 }
 
-.msg li{
+.msg li {
   /* position: absolute; */
   width: 100%;
   height: 100%;
 }
 
-.next{
+.next {
   cursor: pointer;
 }
 
@@ -338,7 +335,7 @@ footer {
   text-align: center;
 }
 
-.footerBtn span{
+.footerBtn span {
   display: inline-block;
   width: 200px;
   height: 50px;
@@ -346,7 +343,6 @@ footer {
   color: #FFF;
   line-height: 46px;
   vertical-align: middle;
-
 }
 
 .footerBtn span:hover {
@@ -354,6 +350,6 @@ footer {
   color: #88B14B
 }
 
-.footerBtn a:first-child{
-  margin-right:30px;
+.footerBtn a:first-child {
+  margin-right: 30px;
 }

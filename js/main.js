@@ -30,7 +30,18 @@ $('.pf_icon').click(function () {
   $('#pf_cont_' + idx).siblings().removeClass('active');
 })
 
+// 현재가 0 다음게 1
+// 현재가 1 다음게 2
+// 현재가 2 다음게 3
+// 현재가 3 다음게 없음
 
-$('.next').click(function(){
+// 현재 = 0
+// console.log($('.msg').index())
+
+// let idx = 0;
+// let crt = $('.msg li').eq();
+
+// $('.next').click(function(){
+//   if()
   
-})
+// })

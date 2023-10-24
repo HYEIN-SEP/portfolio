@@ -167,7 +167,16 @@ header {
 .name {
   height: 100vh;
   padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.email{
+  padding-bottom: 180px;
+}
+
+
 
 
 

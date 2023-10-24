@@ -167,13 +167,13 @@ header {
   border-left: 10px solid #fff;
 }
 
-.msg_wrap{
-  height: 80px;
+.msg_wrap {
+  height: 180px;
   width: 300px;
   overflow: hidden;
 }
 
-.msg{
+.msg {
   height: 80px;
   width: 1200px;
   margin: 0 auto;
@@ -181,7 +181,7 @@ header {
   display: flex;
 }
 
-.msg li{
+.msg li {
   height: 80px;
   width: 300px;
 }

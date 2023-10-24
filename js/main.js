@@ -30,18 +30,13 @@ $('.pf_icon').click(function () {
   $('#pf_cont_' + idx).siblings().removeClass('active');
 })
 
-// 현재가 0 다음게 1
-// 현재가 1 다음게 2
-// 현재가 2 다음게 3
-// 현재가 3 다음게 없음
+let slides = $('.msg li'),
+  next = $('.next');
 
-// 현재 = 0
-// console.log($('.msg').index())
 
-// let idx = 0;
-// let crt = $('.msg li').eq();
-
-// $('.next').click(function(){
-//   if()
-  
-// })
+next.click(function () {
+  for (i = 0; i < slides.length; i++) {
+    slides.eq(i).css({ transform: 'translateX(' + (-100 * i) + '%)' })
+  }
+  next.hide();
+})

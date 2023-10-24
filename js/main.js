@@ -30,13 +30,17 @@ $('.pf_icon').click(function () {
   $('#pf_cont_' + idx).siblings().removeClass('active');
 })
 
-let slides = $('.msg li'),
-  next = $('.next');
 
+let slides = $('.msg li');
+let next = $('.next');
+let slides_idx = 0;
 
 next.click(function () {
-  for (i = 0; i < slides.length; i++) {
-    slides.eq(i).css({ transform: 'translateX(' + (-100 * i) + '%)' })
+  slides_idx++;
+  let transX = -100*slides_idx;
+  slides.css({ transform: 'translateX(' + transX + '%)' });
+  console.log(slides_idx)
+  if(slides_idx > 2) {
+    next.hide();
   }
-  next.hide();
 })

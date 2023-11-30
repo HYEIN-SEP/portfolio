@@ -10,17 +10,6 @@ burger.each(function (index) {
   })
 })
 
-$('.pfContent').slick({
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: false,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  infinite: true
-});
-
 $('.pf_icon').click(function () {
   $(this).addClass('active');
   $(this).siblings().removeClass('active');
@@ -44,3 +33,16 @@ next.click(function () {
     next.hide();
   }
 })
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

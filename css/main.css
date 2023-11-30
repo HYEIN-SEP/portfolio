@@ -207,11 +207,11 @@ header {
   color: #88B14B
 }
 
-.pfContent {
+.mySwiper {
   display: none;
 }
 
-.pfContent.active {
+.mySwiper.active {
   display: block
 }
 
@@ -246,6 +246,11 @@ header {
 
 .box img {
   width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
 /* skillIcon */
@@ -352,3 +357,4 @@ footer {
 .footerBtn a:first-child {
   margin-right: 30px;
 }
+

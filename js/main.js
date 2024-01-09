@@ -10,7 +10,7 @@ burger.each(function (index) {
   })
 })
 
-$('.pf_icon').click(function () {
+$('.portfolioIcon').click(function () {
   $(this).addClass('active');
   $(this).siblings().removeClass('active');
 
@@ -37,10 +37,11 @@ next.click(function () {
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
   spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   clickable: true,
+  // },
+  autoHeight : true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

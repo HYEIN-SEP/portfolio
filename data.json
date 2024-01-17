@@ -1,46 +1,50 @@
 [
     {
-       "id": 1,
+       "id": 1, 
+       "order":"1st project",
        "title": "라이엇게임즈 메인페이지 리뉴얼",
        "purpose" : "기초 HTML, CSS, jS의 활용을 위한 첫 프로젝트",
        "date" : "2023.05.19 ~ 2023.07.06",
        "part" : "헤더, 슬라이드, 기업소개",
        "rate" : "기획(80%), 디자인(50%), 개발(50%)",
+       "site":"https://hyein-sep.github.io/riotgames_renewal/",
        "img" : "/images/riot.png",
        "icon" : [
         {
-            "url" : "/images/html5.svg",
+            "url" : "./images/html5.svg",
             "name" : "HTML"
         },
         {
-            "url" : "/images/css3.svg",
+            "url" : "./images/css3.svg",
             "name" : "CSS"
         },
         {
-            "url" : "/images/javascript.svg",
+            "url" : "./images/javascript.svg",
             "name" : "JavaScript"
         },
         {
-            "url" : "/images/visualstudiocode.svg",
+            "url" : "./images/visualstudiocode.svg",
             "name" : "VScode"
         },
         {
-            "url" : "/images/adobephotoshop.svg",
+            "url" : "./images/adobephotoshop.svg",
             "name" : "Photoshop"
         },
         {
-            "url" : "/images/notion.svg",
+            "url" : "./images/notion.svg",
             "name" : "notion"
         }
        ]
     },
     {
        "id": 2,
+       "order":"2nd project",
        "title": "LG생활건강 리뉴얼",
        "purpose" : "라이브러리, 공공 데이터 API 사용과 반응형 구현을 위한 프로젝트",
        "date" : "2023.07.19 ~ 2023.08.10",
        "part" : "[메인]BUSINESS,ESG,NEW ARRIVALS [서브]투자정보,R&D",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
+       "site":"https://triallife.github.io/LGHNH/",
        "img" : "/images/lghnh.png",
        "icon" : [
         {
@@ -71,11 +75,13 @@
     },
     {
        "id": 3,
+       "order":"3rd project",
        "title": "PUDDING LMS 사이트(관리자)",
        "purpose" : "php, mysql를 활용한 LMS 웹사이트 관리자 페이지 제작",
        "date" : "2023.08.14 ~ 2023.09.08",
        "part" : "강의 등록, 수정, 삭제, 강의상세보기",
        "rate" : "기획(22.5%), 디자인(22%), 개발(21%)",
+       "site":"http://pudding0906.dothome.co.kr/pudding-LMS-website/admin/login.php",
        "img" : "/images/pudding3.png",
        "icon" : [
         {
@@ -110,11 +116,13 @@
     },
     {
        "id": 4,
+       "order":"4th project",
        "title": "PUDDING LMS 사이트(사용자)",
        "purpose" : "3차 백엔드 데이터와 연동하여 사용자 페이지 제작",
        "date" : "2023.05.19 ~ 2023.07.06",
        "part" : "강의클래스, 강의상세보기",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
+       "site":"http://pudding0906.dothome.co.kr/pudding-LMS-website/user/index.php",
        "img" : "/images/pudding4.png",
        "icon" : [
         {
@@ -146,10 +154,13 @@
     {
        "id": 5,
        "title": "다이어팁",
+       "order":"5th project",
        "purpose" : "리액트와 SCSS를 이용하여 반응형 웹사이트 제작",
        "date" : "2023.11.27 ~ 2024.01.06",
        "part" : "운동추천, 운동인증",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
+       "site":"https://yurimeeee.github.io/Diet-tip/",
+       "img" : "/images/dietip.png",
        "icon" : [
         {
             "url" : "./images/html5.svg",

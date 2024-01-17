@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="/css/portfolio.css">
 </head>
 
@@ -23,7 +22,7 @@
     <div class="menu">
       <ul>
         <li><a href="/portfolio.html">PORTFOLIO</a></li>
-        <li><a href="/aboutMe.html">ABOUT ME</a></li>
+        <!-- <li><a href="/aboutMe.html">ABOUT ME</a></li> -->
         <li><a href="https://github.com/HYEIN-SEP" target="_blank">GITHUB</a></li>
       </ul>
     </div>
@@ -39,21 +38,21 @@
   <main class="white_back">
     <div class="container">
       <div class="portfolioTitle">
-        <h1>포트폴리오</h1>
+        <h1>Portfolio</h1>
       </div>
       <div class="portfolioListWrap">
         <ul class="portfolioList">
-          <li><a href="#hi">라이엇게임즈</a></li>
-          <li><a href="">LG생활건강</a></li>
-          <li><a href="">LMS사이트(관리자)</a></li>
-          <li><a href="">LMS사이트(사용자)</a></li>
-          <li><a href="">다이어팁</a></li>
+          <li class="active">라이엇게임즈</li>
+          <li>LG생활건강</li>
+          <li>PUDDING(admin)</li>
+          <li>PUDDING(user)</li>
+          <li>다이어팁</li>
         </ul>
       </div>
       <div class="portfolioContents">
-        <!-- <div class="contentWrap"> -->
-          <!-- <div class="content"> -->
-            <!-- <p class="green">1st project</p>
+        <!-- <div class="contentWrap">
+          <div class="content">
+            <p class="green">1st project</p>
             <h4>라이엇게임즈 메인페이지 리뉴얼</h4>
             <p class="green">프로젝트 목표</p>
             <p>기초 HTML,CSS,jS의 활용을 위한 첫 프로젝트</p>
@@ -63,38 +62,72 @@
             <p>헤더,슬라이드,기업소개</p>
             <p class="green">참여율</p>
             <p>기획(80%), 디자인(50%), 개발(50%)</p>
-            <p class="green">사용언어 및 프로그램</p> -->
+            <p class="green">사용언어 및 프로그램</p>
             <div class="icon">
-              <!-- <div>
+              <div>
                 <img src="/images/html5.svg" alt="">
                 <p>HTML</p>
               </div>
-            </div> -->
-          <!-- </div> -->
-          <!-- <div class="monitor">
+            </div>
+          </div>
+          <div class="monitor">
             <img src="/images/riot.png" alt="">
             <a class="btn" href="https://hyein-sep.github.io/riotgames_renewal/" target="_blank">
               <span>사이트 보러가기</span>
             </a>
-          </div> -->
-        <!-- </div> -->
-      <!-- </div>   -->
+          </div>
+        </div>
+      </div>   -->
     </div>
-
-
-
   </main>
   <footer>
-    <div class="container f_cont">
-      <h2>안녕하세요. 박혜인입니다.</h2>
-      <div class="f_des">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque placeat eum delectus nesciunt
-          debitis ipsum laboriosam iusto architecto ipsam quae libero veritatis, ab rem omnis necessitatibus aliquid
-          reiciendis! Ullam, enim.</p>
+    <div class="footerWrap">
+      <div class="container backGreen">      
+        <div class="footerTitle">
+          <h5>박혜인 입니다</h5>
+        </div>
+        <div class="footerText">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Eaque placeat eum delectus nesciunt debitis ipsum</p>
+        </div>
       </div>
-      <div class="footerBtn">
-        <a href=""><span>contact me</span></a>
-        <a href=""><span>자기소개서 다운로드</span></a>
+      <div class="backwhite">
+        <div class="container">
+          <div class="footerinfo">
+            <p>Portfolio by ParkHyeIn</p>
+            <a href="https://github.com/HYEIN-SEP" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <div class="container contactWrap">
+        <div class="contactInfo">
+          <h5>Contact Information</h5>
+          <div>
+            <h6><i class="fa-solid fa-fire"></i> 지원분야</h6>
+            <p>프론트엔드, 퍼블리셔</p>
+          </div>
+          <div>
+            <h6><i class="fa-solid fa-envelope"></i> 이메일</h6>
+            <p>hyeinpark22@gmail.com</p>
+          </div>
+          <div>
+            <h6><i class="fa-solid fa-house"></i> 주소</h6>
+            <p>서울시 강서구 내발산동</p>
+          </div>
+        </div>
+        <div class="contactForm">
+          <form action="">
+            <label for="first">Your Name</label>
+            <input type="text" id="first">
+            <label for="second">Your Email</label>
+            <input type="email" id="second">
+            <label for="third">Message</label>
+            <textarea id="third" name="third" rows="5" cols="33">
+            </textarea>
+          </form>   
+          <a href="mailto:hellophi@naver.com">보내기</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -105,7 +138,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
     integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="/js/portfolio.js"></script>
 </body>
 

@@ -11,6 +11,7 @@
   font-family: 'NEXON Lv1 Gothic OTF';
   font-weight: 300;
   text-align: center;
+  color: #3a3a3a;
 }
 
 a {
@@ -28,6 +29,14 @@ body {
   background-color: #88B14B;
   overflow-x: hidden;
 }
+
+input,textarea,
+input:focus{
+  border: none;
+  outline: none;
+}
+
+
 
 /* header */
 header {
@@ -394,10 +403,9 @@ header {
 
 
 /* footer */
-footer {
-  background-color: #88B14B;
-  width: 100%;
-  padding: 140px 0;
+.footerWrap{
+  height: 900px;
+  position: relative;
 }
 
 .footerTitle h5{
@@ -407,26 +415,141 @@ footer {
 
 .footerText {
   color: #fff;
-  padding: 50px 30%;
+  padding: 50px 15%;
   text-align: center;
 }
 
-.footerBtn span {
-  display: inline-block;
-  width: 200px;
-  height: 50px;
-  border: 2px solid #fff;
-  color: #FFF;
-  line-height: 46px;
+.backGreen {
+  background-color: #88B14B;
+  height: 50%;
+  padding-top: 120px;
+}
+.backwhite{
+  background-color: #fff;
+  height: 50%;
+
+}
+.backwhite .container{
+  position: relative;;
+  width: 60%;
+  height: 100%;
+
+}
+.footerinfo{
+  width: 100%;
+  position: absolute;
+  left:0;
+  bottom: 30px;
+  display: flex;
+  justify-content:center;
+  line-height: 16px;
   vertical-align: middle;
+
 }
 
-.footerBtn span:hover {
-  background-color: #FFF;
-  color: #88B14B
+.footerinfo p{
+  color:#adadad;
 }
 
-.footerBtn a:first-child {
-  margin-right: 30px;
+.footerinfo i{
+  font-size: 20px;
+  padding-left: 5px;
+  color:#adadad;
 }
 
+.contactWrap{
+  position: absolute;
+  height:400px;
+  width: 50%;
+  background-color: #fff;
+  box-shadow:0 0 15px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  bottom:20%;
+  left: 25%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+
+.contactInfo{
+  width:40%;
+  height: 95%;
+  border-radius: 20px;
+  padding: 50px;
+  /* background-color: #547720; */
+  background-color: #6f884a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.contactInfo h5{
+  color:#FFF;
+  text-align: start;
+}
+
+.contactInfo h6,
+.contactInfo i{
+  font-size: 12px;
+  color:#ffe4bc;
+}
+
+.contactInfo h6{
+  display: block;
+  text-align: start;
+}
+
+.contactInfo p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.contactForm{
+  width:60%;
+  padding-right:50px;
+  text-align: start;
+}
+
+.contactForm a{
+  width:20%;
+  height: 30px;
+  background-color: #FFBE5F;
+  border-radius: 5px;
+  padding:5px 20px;
+  color:#FFF;
+  text-align: end;
+}
+
+.contactForm form{
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.contactForm form label{
+  font-size: 12px;
+}
+
+.contactForm form input,
+.contactForm form textarea{
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+}
+
+.contactForm form input{
+  border-bottom: 1px solid #adadad;
+  margin-bottom: 15px;
+}
+
+.contactForm form textarea{
+  border-bottom: 1px solid #adadad;
+  resize: none;
+}
+
+.contactForm form input:focus,
+.contactForm form textarea:focus{
+  border-bottom: 2px solid #88B14B;
+}

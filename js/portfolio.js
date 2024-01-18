@@ -10,9 +10,9 @@ burger.each(function (index) {
   })
 })
 
-
 $.getJSON('./data.json',
 function(data){
+    let id = getParameter("id");
     var html = [];
 
     $.each(data, function(i, item){
@@ -61,4 +61,22 @@ function(data){
       $('#ct_' + idx).show();
       $('#ct_' + idx).siblings().hide();
     })
+    $(".portfolioList li:nth-child("+id+")").click();
+    //html에 active안 넣고 js로 설정
+
+
+    
 });
+
+function getParameter(key) {
+  const urlParams = new URL(location.href).searchParams;
+  ///portfolio.html?id=3
+  const val = urlParams.get(key);
+  ///key(id)의 값을 val에 넣음 =1;
+
+  return (val?val:1);
+};
+
+$('html, body').animate({
+  scrollTop: $('.portfolioListWrap').offset().top
+}, 'fast'); 

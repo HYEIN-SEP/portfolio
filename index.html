@@ -292,15 +292,15 @@
         </div>
         <div class="contactForm">
           <form action="">
-            <label for="first">Your Name</label>
-            <input type="text" id="first">
-            <label for="second">Your Email</label>
-            <input type="email" id="second">
-            <label for="third">Message</label>
-            <textarea id="third" name="third" rows="5" cols="33">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="5" cols="33">
             </textarea>
           </form>   
-          <a href="mailto:hellophi@naver.com">보내기</a>
+          <button class="dataBtn">보내기</button>
         </div>
       </div>
     </div>
@@ -314,6 +314,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/js/main.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    const firebaseConfig = {
+      apiKey: "AIzaSyA38zHrwkv2R7fLwHL_tTOavoQ4PkhPIhs",
+      authDomain: "profile-1a09b.firebaseapp.com",
+      projectId: "profile-1a09b",
+      storageBucket: "profile-1a09b.appspot.com",
+      messagingSenderId: "406325772784",
+      appId: "1:406325772784:web:2d6f828c86ba6261cadd35"
+    };
+    const app = initializeApp(firebaseConfig);
+  </script>
 </body>
 
 </html>

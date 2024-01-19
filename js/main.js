@@ -48,3 +48,28 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+$('.dataBtn').click(function(){
+  let name = $('#name');
+  let email = $('#email');
+  let msg = $('#msg');
+
+  const db = firebase.database();
+  var postListRef = firebase.database().ref('contact');
+  var newPostRef = postListRef.push();
+
+  function newPostRef(name, email, msg) {
+    firebase.database().ref().set({
+      name: name,
+      email: email,
+      msg : msg
+    });
+  }
+  // newPostRef.set({
+  //   name: name,
+  //   email: email,
+  //   msg : msg
+  // });
+})
+
+
+

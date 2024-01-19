@@ -34,6 +34,7 @@ input,textarea,
 input:focus{
   border: none;
   outline: none;
+  /* appearance: none; */
 }
 
 
@@ -513,7 +514,7 @@ header {
   text-align: start;
 }
 
-.contactForm a{
+.contactForm .dataBtn{
   width:20%;
   height: 30px;
   background-color: #FFBE5F;

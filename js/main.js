@@ -80,16 +80,62 @@ $("#inputForm").validate({
   }
 });
 
-const modal = document.querySelector('#m1');
-const btnOpenModal=document.querySelector('.btn-open-modal');
+$.getJSON('./main.json',function(data){
+  let html = [];
+  let html1 = [];
+  let modal = [];
 
-btnOpenModal.addEventListener("click", ()=>{
-    modal.style.display="block";
-});
+  $.each(data.web, function(i, item){
+    html.push('<div class="swiper-slide box">')
+    html.push('<img src="'+ item.img +'" alt="">')
+    html.push('<hr>')
+    html.push('<div>')
+    html.push('<p>'+ item.order +'</p>')
+    html.push('<h6>'+ item.title +'</h6>')
+    html.push('<a href="'+ item.url +'">')
+    html.push('<button>바로가기</button>')
+    html.push('</a>')
+    html.push('</div>')
+    html.push('</div>')
+  })
+  $('#swiper_1').html(html.join(''));
 
-const modal1 = document.querySelector('#m2');
-const btnOpenModal1=document.querySelector('.btn-open-modal1');
+  $.each(data.design, function(d, dn){
+    html1.push('<div class="swiper-slide box">')
+    html1.push('<img src="'+ dn.img +'" alt="">')
+    html1.push('<hr>')
+    html1.push('<div>')
+    html1.push('<p>'+ dn.sort +'</p>')
+    html1.push('<h6>'+ dn.title +'</h6>')
+    html1.push('<button class="mBTn" id="mBtn_'+dn.id+'">자세히보기</button>')
+    html1.push('</div>')
+    html1.push('</div>')
 
-btnOpenModal1.addEventListener("click", ()=>{
-    modal1.style.display="block";
+    modal.push('<div class="modalWrap" id="m_'+dn.id+'">')
+    modal.push('<div class="modalContent">')
+    modal.push('<div class="modalClose">')
+    modal.push('<i class="fa-solid fa-circle-xmark"></i>')
+    modal.push('</div>')
+    modal.push('<img src="'+dn.detail+'" alt="">')
+    modal.push('</div>')
+    modal.push('</div>')
+  })
+  $('#swiper_2').html(html1.join(''));
+  $('.white_back').after(modal.join(''));
+
+
+  for(i=0;i<data.design.length;i++){
+    let idx = data.design[i].id
+    let modalId = $('#m_'+idx+'');
+    let btnId=$('#mBtn_'+idx+'');
+
+    btnId.on("click", ()=>{
+      modalId.css("display","block");
+    });
+  }
+
+  $('.modalClose').click(function(){
+    $('.modalWrap').css("display","none");
+  })
+
 });

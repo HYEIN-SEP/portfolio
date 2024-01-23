@@ -22,7 +22,6 @@
     <div class="menu">
       <ul>
         <li><a href="/portfolio.html">PORTFOLIO</a></li>
-        <!-- <li><a href="/aboutMe.html">ABOUT ME</a></li> -->
         <li><a href="https://github.com/HYEIN-SEP" target="_blank">GITHUB</a></li>
       </ul>
     </div>
@@ -33,7 +32,6 @@
         <span></span>
       </a>
     </div>
-    <!-- Inspiration: https://dribbble.com/shots/4397812-Click-Me -->
   </header>
   <main class="white_back">
     <div class="container">
@@ -50,41 +48,13 @@
         </ul>
       </div>
       <div class="portfolioContents">
-        <!-- <div class="contentWrap">
-          <div class="content">
-            <p class="green">1st project</p>
-            <h4>라이엇게임즈 메인페이지 리뉴얼</h4>
-            <p class="green">프로젝트 목표</p>
-            <p>기초 HTML,CSS,jS의 활용을 위한 첫 프로젝트</p>
-            <p class="green">제작기간</p>
-            <p>2023.05.19 ~ 2023.07.06</p>
-            <p class="green">담당파트</p>
-            <p>헤더,슬라이드,기업소개</p>
-            <p class="green">참여율</p>
-            <p>기획(80%), 디자인(50%), 개발(50%)</p>
-            <p class="green">사용언어 및 프로그램</p>
-            <div class="icon">
-              <div>
-                <img src="/images/html5.svg" alt="">
-                <p>HTML</p>
-              </div>
-            </div>
-          </div>
-          <div class="monitor">
-            <img src="/images/riot.png" alt="">
-            <a class="btn" href="https://hyein-sep.github.io/riotgames_renewal/" target="_blank">
-              <span>사이트 보러가기</span>
-            </a>
-          </div>
-        </div>
-      </div>   -->
     </div>
   </main>
   <footer>
     <div class="footerWrap">
       <div class="container backGreen">      
         <div class="footerTitle">
-          <h5>박혜인 입니다</h5>
+          <h5>CONTACT ME</h5>
         </div>
         <div class="footerText">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -117,16 +87,16 @@
           </div>
         </div>
         <div class="contactForm">
-          <form action="">
-            <label for="first">Your Name</label>
-            <input type="text" id="first">
-            <label for="second">Your Email</label>
-            <input type="email" id="second">
-            <label for="third">Message</label>
-            <textarea id="third" name="third" rows="5" cols="33">
+          <form action="" method="post" id="inputForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="5" cols="33">
             </textarea>
           </form>   
-          <a href="mailto:hellophi@naver.com">보내기</a>
+          <button type="submit" class="dataBtn">보내기</button>
         </div>
       </div>
     </div>
@@ -135,9 +105,57 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
     integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    import { getFirestore, collection , addDoc } from 'https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyA38zHrwkv2R7fLwHL_tTOavoQ4PkhPIhs",
+      authDomain: "profile-1a09b.firebaseapp.com",
+      projectId: "profile-1a09b",
+      storageBucket: "profile-1a09b.appspot.com",
+      messagingSenderId: "406325772784",
+      appId: "1:406325772784:web:2d6f828c86ba6261cadd35"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    // const db = firebase.firestore();
+    const db = getFirestore(app);
+
+    $('.dataBtn').click(async function(){
+      let name = $("#name").val();
+      let email = $("#email").val();
+      let msg = $("#msg").val();
+
+      if(name==""){
+        alert("이름을 입력해주세요.");
+        $("#name").select();
+      }else if(email==""){
+        alert("이메일을 입력해주세요.");
+        $("#email").select();
+      }else if(msg==""){
+        alert("메세지를 입력해주세요.");
+        $("#msg").select();
+      }else{
+        const docRef = await addDoc(collection(db, "contact"), {
+          name: name,
+          email: email,
+          msg: msg,
+          date: new Date()
+        });
+        alert("등록되었습니다.");
+        $("#name").val("");
+        $("#email").val("");
+        $("#msg").val("");
+      }
+    })
+  </script>
   <script src="/js/portfolio.js"></script>
 </body>
 

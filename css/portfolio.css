@@ -365,16 +365,14 @@ p{
   width:60%;
   padding-right:50px;
   text-align: start;
+  font-size: 14px;
 }
 
-.contactForm a{
+.contactForm .dataBtn{
   width:20%;
   height: 30px;
   background-color: #FFBE5F;
-  border-radius: 5px;
-  padding:5px 20px;
-  color:#FFF;
-  text-align: end;
+  border-radius: 25px;
 }
 
 .contactForm form{
@@ -406,4 +404,8 @@ p{
 .contactForm form input:focus,
 .contactForm form textarea:focus{
   border-bottom: 2px solid #88B14B;
+}
+
+.error{
+  color:red;
 }

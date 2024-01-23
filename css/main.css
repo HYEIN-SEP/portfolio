@@ -235,15 +235,34 @@ header {
   background-color: rgba(0,0,0,0.4);
   z-index: 9;
 }
+
 .modalContent{
   position:absolute;
   top:50%;
   left: 50%;
-  width:50%;
-  height: 50%;
+  width:55%;
   background-color: #fff;
   z-index: 10;
   transform: translate(-50%, -50%);
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.modalClose{
+  position: relative;
+}
+
+.modalContent i{
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  font-size: 30px;
+  color:#777777;
+}
+
+.modalContent img{
+  width:100%;
+  border-radius: 15px;
 }
 
 .portfolioSection {

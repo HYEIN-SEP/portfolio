@@ -142,7 +142,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top:100px;
+  margin-top:50px;
 }
 
 /* 말풍선 */
@@ -206,6 +206,7 @@ header {
 } */
 
 
+
 /* 캐릭터 이미지 */
 .top_img{
   width: 790px;
@@ -219,7 +220,32 @@ header {
   background-color: #FFF;
   border-radius: 35px 35px 0px 0px;
   transform: translateY(-15px);
+  position: relative;
 }
+
+/* modal */
+.modalWrap{
+  position:fixed;
+  display:none; 
+  justify-content: center;
+  top:0;
+  left:0;
+  width:100%;
+  height:100vh;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 9;
+}
+.modalContent{
+  position:absolute;
+  top:50%;
+  left: 50%;
+  width:50%;
+  height: 50%;
+  background-color: #fff;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
 .portfolioSection {
   position: relative;
   width:100%;
@@ -277,7 +303,7 @@ header {
 }
 .swiper-slide button,
 .next{
-  width: 80px;
+  width: 110px;
   height: 35px;
   border-radius: 20px;
   background-color: #ffbe5f;
@@ -324,6 +350,8 @@ header {
 .box img {
   width: 80%;
 }
+
+
 
 
 /* skillIcon */
@@ -512,16 +540,14 @@ header {
   width:60%;
   padding-right:50px;
   text-align: start;
+  font-size: 14px;
 }
 
 .contactForm .dataBtn{
   width:20%;
   height: 30px;
   background-color: #FFBE5F;
-  border-radius: 5px;
-  padding:5px 20px;
-  color:#FFF;
-  text-align: end;
+  border-radius: 25px;
 }
 
 .contactForm form{
@@ -553,4 +579,8 @@ header {
 .contactForm form input:focus,
 .contactForm form textarea:focus{
   border-bottom: 2px solid #88B14B;
+}
+
+.error{
+  color:red;
 }

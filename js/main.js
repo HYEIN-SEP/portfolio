@@ -21,13 +21,15 @@ $('.portfolioIcon').click(function () {
 
 
 let slides = $('.msg li');
-let next = $('.next');
+let next = $('.msgNext');
 let slides_idx = 0;
 
 next.click(function () {
   slides_idx++;
   let transX = -100*slides_idx;
-  slides.css({ transform: 'translateX(' + transX + '%)' });
+  slides.css({ 
+    transform: 'translateX(' + transX + '%)',
+    transition : '.5s' });
   console.log(slides_idx)
   if(slides_idx > 2) {
     next.hide();

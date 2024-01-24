@@ -5,7 +5,7 @@
       "order" : "1st project",
       "title" : "라이엇게임즈 메인페이지 리뉴얼",
       "img" : "./images/riot.png",
-      "url" : "/portfolio.html?id=1"
+      "url" : "portfolio.html?id=1"
     },
     {
       "id":2,
@@ -19,7 +19,7 @@
       "order" : "3rd project",
       "title" : "PUDDING LMS 사이트(관리자)",
       "img" : "./images/pudding3.png",
-      "url" : "/portfolio.html?id=3"
+      "url" : "./portfolio.html?id=3"
     },
     {
       "id":4,

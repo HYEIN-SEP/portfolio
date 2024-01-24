@@ -268,9 +268,11 @@ p{
 }
 
 .footerText {
-  color: #fff;
   padding: 50px 15%;
   text-align: center;
+}
+.footerText p{
+  color:#fff;
 }
 
 .backGreen {
@@ -298,7 +300,6 @@ p{
   justify-content:center;
   line-height: 16px;
   vertical-align: middle;
-
 }
 
 .footerinfo p{
@@ -368,11 +369,28 @@ p{
   font-size: 14px;
 }
 
+/* 버튼 */
+
 .contactForm .dataBtn{
-  width:20%;
-  height: 30px;
-  background-color: #FFBE5F;
-  border-radius: 25px;
+  width: 110px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ffbe5f;
+  border-color: #000;
+  margin-top: 20px;
+
+}
+.contactForm .dataBtn:hover{
+  background-color: #fff;
+  border-color: #ffbe5f;
+  transition: linear .3s;
+}
+
+.msgNext{
+  margin-top: 0;
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 55px);
 }
 
 .contactForm form{

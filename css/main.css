@@ -177,35 +177,21 @@ header {
 
 .msg {
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
   padding-left: 0;
   display: flex;
+  align-items: center;
 }
 
 .msg li {
   width: 300px;
+  padding: 0 40px 25px;
 }
 
-.next {
-  margin: 60px auto 0;
+.msgNext {
+  margin: 0 auto;
 }
-
-/* .next {
-  width: 100px;
-  margin: 30px auto 0;
-  border-radius: 20px;
-  border : 1px solid #88B14B;
-  color: #88B14B;
-  background-color: transparent;
-}
-
-.next:hover{
-  transition: .6s;
-  color:#fff;
-  background-color: #88B14B;
-} */
-
-
 
 /* 캐릭터 이미지 */
 .top_img{
@@ -250,6 +236,7 @@ header {
 
 .modalClose{
   position: relative;
+  cursor: pointer;
 }
 
 .modalContent i{
@@ -310,6 +297,38 @@ header {
   font-weight: 600;
 }
 
+
+/* 버튼 */
+
+.swiper-slide button,
+.msgNext,
+.contactForm .dataBtn{
+  width: 110px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ffbe5f;
+  /* box-shadow: 0 2px ; */
+  border-color: #000;
+  margin-top: 20px;
+
+}
+.swiper-slide button:hover,
+.msgNext:hover,
+.contactForm .dataBtn:hover{
+  background-color: #fff;
+  /* box-shadow:none; */
+  border-color: #ffbe5f;
+  transition: linear .3s;
+}
+
+.msgNext{
+  margin-top: 0;
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 55px);
+}
+
+
 /* 슬라이드 */
 
 .mySwiper {
@@ -320,22 +339,7 @@ header {
 .mySwiper.active {
   display: block
 }
-.swiper-slide button,
-.next{
-  width: 110px;
-  height: 35px;
-  border-radius: 20px;
-  background-color: #ffbe5f;
-  /* box-shadow: 0 2px ; */
-  border-color: #000;
-  margin-top: 20px;
-}
-.swiper-slide button:hover,
-.next:hover{
-  background-color: #fff;
-  /* box-shadow:none; */
-  border-color: #ffbe5f;
-}
+
 .swiper-slide p{
   color: #88B14B;
 }
@@ -369,8 +373,6 @@ header {
 .box img {
   width: 80%;
 }
-
-
 
 
 /* skillIcon */
@@ -461,10 +463,12 @@ header {
   color:#fff;
 }
 
-.footerText {
-  color: #fff;
+.footerText{
   padding: 50px 15%;
   text-align: center;
+}
+.footerText p{
+  color:#fff;
 }
 
 .backGreen {
@@ -560,13 +564,6 @@ header {
   padding-right:50px;
   text-align: start;
   font-size: 14px;
-}
-
-.contactForm .dataBtn{
-  width:20%;
-  height: 30px;
-  background-color: #FFBE5F;
-  border-radius: 25px;
 }
 
 .contactForm form{

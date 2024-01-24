@@ -8,7 +8,7 @@
        "part" : "헤더, 슬라이드, 기업소개",
        "rate" : "기획(80%), 디자인(50%), 개발(50%)",
        "site":"https://hyein-sep.github.io/riotgames_renewal/",
-       "img" : "/images/riot.png",
+       "img" : "./images/riot.png",
        "icon" : [
         {
             "url" : "./images/icon/html5.svg",
@@ -45,7 +45,7 @@
        "part" : "[메인]BUSINESS,ESG,NEW ARRIVALS [서브]투자정보,R&D",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
        "site":"https://triallife.github.io/LGHNH/",
-       "img" : "/images/lghnh.png",
+       "img" : "./images/lghnh.png",
        "icon" : [
         {
             "url" : "/images/icon/html5.svg",
@@ -82,7 +82,7 @@
        "part" : "강의 등록, 수정, 삭제, 강의상세보기",
        "rate" : "기획(22.5%), 디자인(22%), 개발(21%)",
        "site":"http://pudding0906.dothome.co.kr/pudding-LMS-website/admin/login.php",
-       "img" : "/images/pudding3.png",
+       "img" : "./images/pudding3.png",
        "icon" : [
         {
             "url" : "./images/icon/html5.svg",
@@ -127,7 +127,7 @@
        "part" : "강의클래스, 강의상세보기",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
        "site":"http://pudding0906.dothome.co.kr/pudding-LMS-website/user/index.php",
-       "img" : "/images/pudding4.png",
+       "img" : "./images/pudding4.png",
        "icon" : [
         {
             "url" : "./images/icon/html5.svg",
@@ -172,7 +172,7 @@
        "part" : "운동추천, 운동인증",
        "rate" : "기획(25%), 디자인(25%), 개발(25%)",
        "site":"https://yurimeeee.github.io/Diet-tip/",
-       "img" : "/images/dietip.png",
+       "img" : "./images/dietip.png",
        "icon" : [
         {
             "url" : "./images/icon/sass.svg",

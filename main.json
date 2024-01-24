@@ -5,14 +5,14 @@
       "order" : "1st project",
       "title" : "라이엇게임즈 메인페이지 리뉴얼",
       "img" : "./images/riot.png",
-      "url" : "portfolio.html?id=1"
+      "url" : "./portfolio.html?id=1"
     },
     {
       "id":2,
       "order" : "2nd project",
       "title" : "LG생활건강 리뉴얼",
       "img" : "./images/lghnh.png",
-      "url" : "/portfolio.html?id=2"
+      "url" : "./portfolio.html?id=2"
     },
     {
       "id":3,
@@ -26,14 +26,14 @@
       "order" : "4th project",
       "title" : "PUDDING LMS 사이트(사용자)",
       "img" : "./images/pudding4.png",
-      "url" : "/portfolio.html?id=4"
+      "url" : "./portfolio.html?id=4"
     },
     {
       "id":5,
       "order" : "5th project",
       "title" : "다이어팁",
       "img" : "./images/dietip.png",
-      "url" : "/portfolio.html?id=5"
+      "url" : "./portfolio.html?id=5"
     }
   ],
   "design" : [

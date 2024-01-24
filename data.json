@@ -48,15 +48,15 @@
        "img" : "./images/lghnh.png",
        "icon" : [
         {
-            "url" : "/images/icon/html5.svg",
+            "url" : "./images/icon/html5.svg",
             "name" : "HTML"
         },
         {
-            "url" : "/images/icon/css3.svg",
+            "url" : "./images/icon/css3.svg",
             "name" : "CSS"
         },
         {
-            "url" : "/images/icon/jquery.svg",
+            "url" : "./images/icon/jquery.svg",
             "name" : "Jquery"
         },
         {
@@ -64,7 +64,7 @@
             "name" : "Photoshop"
         },
         {
-            "url" : "/images/icon/figma.svg",
+            "url" : "./images/icon/figma.svg",
             "name" : "FIGMA"
         },
         {

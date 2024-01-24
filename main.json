@@ -4,35 +4,35 @@
       "id":1,
       "order" : "1st project",
       "title" : "라이엇게임즈 메인페이지 리뉴얼",
-      "img" : "/images/riot.png",
+      "img" : "./images/riot.png",
       "url" : "/portfolio.html?id=1"
     },
     {
       "id":2,
       "order" : "2nd project",
       "title" : "LG생활건강 리뉴얼",
-      "img" : "/images/lghnh.png",
+      "img" : "./images/lghnh.png",
       "url" : "/portfolio.html?id=2"
     },
     {
       "id":3,
       "order" : "3rd project",
       "title" : "PUDDING LMS 사이트(관리자)",
-      "img" : "/images/pudding3.png",
+      "img" : "./images/pudding3.png",
       "url" : "/portfolio.html?id=3"
     },
     {
       "id":4,
       "order" : "4th project",
       "title" : "PUDDING LMS 사이트(사용자)",
-      "img" : "/images/pudding4.png",
+      "img" : "./images/pudding4.png",
       "url" : "/portfolio.html?id=4"
     },
     {
       "id":5,
       "order" : "5th project",
       "title" : "다이어팁",
-      "img" : "/images/dietip.png",
+      "img" : "./images/dietip.png",
       "url" : "/portfolio.html?id=5"
     }
   ],
@@ -41,57 +41,57 @@
       "id":1,
       "sort":"online",
       "title":"홈페이지 상세페이지",
-      "img":"/images/design/design_1.jpg",
-      "detail":"/images/design/detail/detail_1.jpg"
+      "img":"./images/design/design_1.jpg",
+      "detail":"./images/design/detail/detail_1.jpg"
     },
     {
       "id":2,
       "sort":"offilne",
       "title":"예방접종 안내 포스터",
-      "img":"/images/design/design_2.jpg",
-      "detail":"/images/design/detail/detail_2.jpg"
+      "img":"./images/design/design_2.jpg",
+      "detail":"./images/design/detail/detail_2.jpg"
     },
     {
       "id":3,
       "sort":"offilne",
       "title":"질환정보 포스터",
-      "img":"/images/design/design_3.jpg",
-      "detail":"/images/design/detail/detail_3.jpg"
+      "img":"./images/design/design_3.jpg",
+      "detail":"./images/design/detail/detail_3.jpg"
     },
     {
       "id":4,
       "sort":"offilne",
       "title":"산후조리원 브로셔",
-      "img":"/images/design/design_4.jpg",
-      "detail":"/images/design/detail/detail_4.jpg"
+      "img":"./images/design/design_4.jpg",
+      "detail":"./images/design/detail/detail_4.jpg"
     },
     {
       "id":5,
       "sort":"offilne",
       "title":"질환정보 포스터",
-      "img":"/images/design/design_5.jpg",
-      "detail":"/images/design/detail/detail_5.jpg"
+      "img":"./images/design/design_5.jpg",
+      "detail":"./images/design/detail/detail_5.jpg"
     },
     {
       "id":6,
       "sort":"online",
       "title":"이벤트 상세페이지",
-      "img":"/images/design/design_6.jpg",
-      "detail":"/images/design/detail/detail_6.jpg"
+      "img":"./images/design/design_6.jpg",
+      "detail":"./images/design/detail/detail_6.jpg"
     },
     {
       "id":7,
       "sort":"online",
       "title":"병원 홍보용 상세페이지",
-      "img":"/images/design/design_7.jpg",
-      "detail":"/images/design/detail/detail_7.jpg"
+      "img":"./images/design/design_7.jpg",
+      "detail":"./images/design/detail/detail_7.jpg"
     },
     {
       "id":8,
       "sort":"online",
       "title":"홈페이지 그림 자료",
-      "img":"/images/design/design_8.jpg",
-      "detail":"/images/design/detail/detail_8.jpg"
+      "img":"./images/design/design_8.jpg",
+      "detail":"./images/design/detail/detail_8.jpg"
     }
   ]
 }

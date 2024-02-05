@@ -37,49 +37,19 @@ next.click(function () {
 })
 
 var swiper = new Swiper(".mySwiper", {
+  observer: true, 
+  observeParents: true,
   slidesPerView: 3,
   spaceBetween: 10,
   loop: true,
   autoplay: {
-    delay: 3000,
-    disableOnInteraction: false 
+    delay: 2500,
   },
   autoHeight : true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-});
-
-
-$("#inputForm").validate({
-  rules: {
-    name : {
-      required : true,
-    },
-    email : {
-      required : true,
-      email: true
-    },
-    msg : {
-      required : true,
-    }
-  },
-  messages: {
-    name: {
-        required: "이름을 입력해주세요.",
-    },
-    email: {
-        required: "이메일을 입력해주세요",
-        email: "abc@abc.com형식으로 입력해주세요."
-    },
-    msg: {
-      required: "내용을 입력해주세요",
-    }
-  },
-  submitHandler: function(){
-    console.log("submit!");
-  }
 });
 
 $.getJSON('./main.json',function(data){
@@ -140,4 +110,34 @@ $.getJSON('./main.json',function(data){
     $('.modalWrap').css("display","none");
   })
 
+});
+
+$("#inputForm").validate({
+  rules: {
+    name : {
+      required : true,
+    },
+    email : {
+      required : true,
+      email: true
+    },
+    msg : {
+      required : true,
+    }
+  },
+  messages: {
+    name: {
+        required: "이름을 입력해주세요.",
+    },
+    email: {
+        required: "이메일을 입력해주세요",
+        email: "abc@abc.com형식으로 입력해주세요."
+    },
+    msg: {
+      required: "내용을 입력해주세요",
+    }
+  },
+  submitHandler: function(){
+    console.log("submit!");
+  }
 });

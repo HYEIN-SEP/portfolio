@@ -303,8 +303,9 @@ header {
 .swiper-slide button,
 .msgNext,
 .contactForm .dataBtn{
-  width: 110px;
-  height: 35px;
+  /* width: 110px; */
+  line-height: 35px;
+  padding:0 15px;
   border-radius: 20px;
   background-color: #ffbe5f;
   /* box-shadow: 0 2px ; */
@@ -334,7 +335,7 @@ header {
 .mySwiper {
   display: none;
   width:100%;
-  height: 408px;
+  /* height: 408px; */
 }
 .mySwiper.active {
   display: block
@@ -477,26 +478,18 @@ header {
   padding-top: 120px;
 }
 .backwhite{
+  position: relative;;
   background-color: #fff;
   height: 50%;
-
 }
-.backwhite .container{
-  position: relative;;
-  width: 60%;
-  height: 100%;
 
-}
 .footerinfo{
   width: 100%;
   position: absolute;
-  left:0;
   bottom: 30px;
   display: flex;
   justify-content:center;
   line-height: 16px;
-  vertical-align: middle;
-
 }
 
 .footerinfo p{
@@ -523,11 +516,12 @@ header {
   justify-content: center;
   align-items: center;
   gap:50px;
+  padding: 20px;
 }
 
 .contactInfo{
   width:40%;
-  height: 95%;
+  height: 100%;
   border-radius: 20px;
   padding: 50px;
   /* background-color: #547720; */
